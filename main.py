@@ -41,8 +41,8 @@ def get_package_name(tracking_number: str, db: Session = Depends(get_session)):
     return {"tracking_number": tracking_number, "package_name": package.name}
 
 
-@app.post("/")
-def create_package_endpoint(
+@app.post("/create_package/")
+def create_package(
     tracking_number: str,
     name: str,
     sender_name: str,
