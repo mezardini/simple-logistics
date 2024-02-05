@@ -17,7 +17,6 @@ class Sender(BaseModel):
     name: str
     location: str
 
-
 class Reciever(BaseModel):
     name: str
     location: str

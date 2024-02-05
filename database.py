@@ -1,9 +1,8 @@
-# database.py
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from models import Base
 
-DATABASE_URL = "sqlite:///./dinn.db"
+DATABASE_URL = "sqlite:///./dinx.db"
 engine = create_engine(DATABASE_URL)
 
 # Create the tables defined in your models
