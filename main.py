@@ -73,7 +73,7 @@ def create_rider_endpoint(
     return rider
 
 
-@app.get("/assign_rider/{tracking_number}/location")
+@app.get("/assign_rider/{tracking_number}/location/")
 def assign_rider_to_package(
     tracking_number: str,
     # packagex: models.Package,
@@ -96,3 +96,4 @@ def get_all_packages(
     ):
     packages = db.query(models.Package).all()
     return packages
+

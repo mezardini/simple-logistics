@@ -14,6 +14,10 @@ This project is a FastAPI-based application for managing logistics operations. I
 
 ## ENDPOINTS
 
-1. GET /packages/{tracking_number}/name
+1. POST /create-rider/ - create a rider
 
-1. POST /create_package/
+2. GET /all - get all packages
+
+3. POST /create_package/ - create a package
+
+4. POST /assign_rider/{tracking_number}/location/ - assign a rider to a package
